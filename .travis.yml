@@ -14,7 +14,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
   app: "docker-learning"
-  environment: "DockerLearning-env"
+  env: "DockerLearning-env"
   bucket_name: "elasticbeanstalk-us-west-2-349616744509"
   bucket_path: "docker-learning"
   on:
