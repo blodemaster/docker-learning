@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+ - docker build -f Dockerfile.dev -t blodemaster/docker-learning .
+
+
+script:
+ - docker run blodemaster/docker-learning npm run test -- --coverage
+
